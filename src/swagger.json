@@ -1,0 +1,191 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "Esta eh uma documentacao sobre a Atlas API ",
+      "version": "1.0.0",
+      "title": "Atlas",
+      "contact": {
+        "email": "gustavo.torregrosa@gmail.com"
+      }
+    },
+    "tags": [
+      {
+        "name": "users",
+        "description": "Gerenciamento de usuario"
+    
+      }
+   
+     
+    ],
+    "schemes": [
+      "https",
+      "http"
+    ],
+    "paths": {
+      "/users": {
+        "post": {
+          "tags": [
+            "users"
+          ],
+          "summary": "Cria novo usuario",
+          "description": "",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "example":{
+            "name": "gustavo torregrosa",
+            "email": "gustavo.torregrosa@gmail.com"
+          },
+          "parameters": {
+            "name": {
+              "description": "Esta eh uma documentacao sobre a Atlas API "
+            }
+          },
+          "responses": {
+            "404": {
+              "description": "Invalid input"
+            },
+            "200": {
+              "description": "User created"
+            }
+          },
+          "security": [
+            {
+              "petstore_auth": [
+                "write:pets",
+                "read:pets"
+              ]
+            }
+          ]
+        },
+
+        "get": {
+          "tags": [
+            "users"
+          ],
+          "summary": "Retorna todos os usuarios",
+          "description": "",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "example":{
+            "name": "gustavo torregrosa",
+            "email": "gustavo.torregrosa@gmail.com"
+          },
+          "parameters": {
+            "name": {
+              "description": "Esta eh uma documentacao sobre a Atlas API "
+            }
+          },
+          "responses": {
+            "404": {
+              "description": "Invalid input"
+            },
+            "200": {
+              "description": "User created"
+            }
+          },
+          "security": [
+            {
+              "petstore_auth": [
+                "write:pets",
+                "read:pets"
+              ]
+            }
+          ]
+        }
+      },
+
+      "/users/{user_id}": {
+        "get": {
+          "tags": [
+            "users"
+          ],
+          "summary": "Cria novo usuario",
+          "description": "",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "example":{
+            "name": "gustavo torregrosa",
+            "email": "gustavo.torregrosa@gmail.com"
+          },
+          "parameters": {
+            "name": {
+              "description": "Esta eh uma documentacao sobre a Atlas API "
+            }
+          },
+          "responses": {
+            "404": {
+              "description": "Invalid input"
+            },
+            "200": {
+              "description": "User created"
+            }
+          },
+          "security": [
+            {
+              "petstore_auth": [
+                "write:pets",
+                "read:pets"
+              ]
+            }
+          ]
+        }
+
+      },
+
+
+      "/users/{user_id}/admin": {
+        "patch": {
+          "tags": [
+            "users"
+          ],
+          "summary": "Cria novo usuario",
+          "description": "",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "example":{
+            "name": "gustavo torregrosa",
+            "email": "gustavo.torregrosa@gmail.com"
+          },
+          "parameters": {
+            "name": {
+              "description": "Esta eh uma documentacao sobre a Atlas API "
+            }
+          },
+          "responses": {
+            "404": {
+              "description": "Invalid input"
+            },
+            "200": {
+              "description": "User created"
+            }
+          },
+          "security": [
+            {
+              "petstore_auth": [
+                "write:pets",
+                "read:pets"
+              ]
+            }
+          ]
+        }
+
+      }  
+    }
+  }
+  
