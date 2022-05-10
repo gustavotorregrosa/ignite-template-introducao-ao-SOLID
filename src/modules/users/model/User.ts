@@ -6,7 +6,7 @@ class User {
   public created_at: Date;
   public updated_at: Date;
 
-  public constructor(public name: string, public email: string) {
+  public constructor(public name: string = 'gustavo', public email: string = 'gustavo.torregrosa@gmail.com') {
     this.id = uuidV4()
     this.admin = false
     this.updated_at = new Date()
